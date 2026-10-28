@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Inkly">
+  <rect width="32" height="32" rx="7.2" fill="#10131A"/>
+  <g transform="translate(15 16.9) rotate(40) scale(0.8) translate(0 -1.6)">
+    <path d="M-5.5 -8H5.5V-2.5L0 10-5.5-2.5z" fill="#F4F5F7"/>
+    <rect x="-5.5" y="-11" width="11" height="4" fill="#F4F5F7"/>
+    <rect x="-6" y="-7.6" width="12" height="0.7" fill="#10131A"/>
+    <rect x="-0.45" y="0.5" width="0.9" height="9.7" fill="#10131A"/>
+    <circle cy="-0.6" r="1.7" fill="#10131A"/>
+    <circle cy="13.4" r="2" fill="#7CF2C1"/>
+  </g>
+</svg>
