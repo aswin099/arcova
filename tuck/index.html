@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuck · Clipboard manager for Mac, by Arcova</title>
+<meta name="description" content="Tuck remembers what you copy and gets it back in two keystrokes. Free, open source and private: nothing leaves your Mac.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tuck: your clipboard, tucked away">
+<meta property="og:description" content="A free, open-source clipboard manager for Mac. Keyboard-first, local-only.">
+<meta property="og:url" content="https://aswin099.github.io/arcova/tuck/">
+<meta name="theme-color" content="#2B2D6E">
+<link rel="icon" href="../img/tuck-icon.png" type="image/png">
+<link rel="preload" href="../fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../site.css">
+</head>
+<body class="t-tuck">
+
+<header class="hero">
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="../" aria-label="Arcova home">
+        <svg viewBox="0 0 48 48" fill="none" stroke-width="4" aria-hidden="true"><path d="M10 30A14 14 0 0 1 38 30M17.5 30A6.5 6.5 0 0 1 30.5 30" stroke="currentColor"/><path d="M8 37q4-3 8 0t8 0 8 0 8 0" stroke="#7FD1C7" stroke-width="3" stroke-linecap="round"/></svg>
+        Arcova
+      </a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#keys">Shortcuts</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="../">All apps</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <img class="tuck-icon" src="../img/tuck-icon.png" width="88" height="88" alt="Tuck app icon">
+        <p class="eyebrow">Tuck by Arcova</p>
+        <h1>Copy once. <em>Paste in two keystrokes.</em></h1>
+        <p class="lead">Tuck remembers what you copy, so you can search it and paste it back any time. Free, open source, and nothing ever leaves your Mac.</p>
+        <div class="cta">
+          <a class="pill main" href="https://github.com/aswin099/tuck/releases">Get the preview</a>
+          <a class="pill ghost" href="https://github.com/aswin099/tuck">View the source</a>
+        </div>
+        <p class="note">Early preview v0.1 for macOS 14 Sonoma or later. MIT licence.</p>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="popup">
+          <div class="search">⌕ Search your clipboard</div>
+          <ul>
+            <li class="sel"><i class="pin"></i><span class="t">Invoice 0418, due Friday</span><kbd>⌘1</kbd></li>
+            <li><i class="pin" style="background:transparent"></i><span class="t">https://example.com/launch-plan</span><kbd>⌘2</kbd></li>
+            <li><i class="pin" style="background:transparent"></i><span class="thumb"></span><span class="t">Screenshot</span><kbd>⌘3</kbd></li>
+            <li><i class="pin" style="background:transparent"></i><span class="t">Meeting notes, 3 pm with the team</span><kbd>⌘4</kbd></li>
+          </ul>
+          <div class="foot"><span>↩ paste</span><span>⌘P pin</span><span>⌘Y preview</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="features">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">What it does</p>
+      <h2>Light, quick and out of your way.</h2>
+      <p>Tuck lives in your menu bar and opens with one shortcut.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3h6v1M9 10h6M9 14h6"/></svg></div>
+        <h3>Remembers what you copy</h3>
+        <p>Text, links, images and files. Search as you type and pin the things you need again and again.</p>
+      </article>
+      <article class="card">
+        <div class="ic o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h.01M11 10h.01M15 10h.01M7 14h10"/></svg></div>
+        <h3>Keyboard first</h3>
+        <p>Open with <kbd class="k">⇧⌘V</kbd>, press <kbd class="k">↩</kbd> to paste, or <kbd class="k">⌘1</kbd> to <kbd class="k">⌘9</kbd> to paste the one you want.</p>
+      </article>
+      <article class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h12M4 12h16M4 17h10M18 5l2 2-2 2"/></svg></div>
+        <h3>Paste queue</h3>
+        <p>Line up several items, then paste them one by one, oldest first, with <kbd class="k">⌃⌘V</kbd>.</p>
+      </article>
+      <article class="card">
+        <div class="ic o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+        <h3>Spots secrets</h3>
+        <p>API keys, tokens, private keys and card numbers are hidden and removed after a few minutes, and the clipboard is cleared after you paste one.</p>
+      </article>
+      <article class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6z"/></svg></div>
+        <h3>Respects password managers</h3>
+        <p>Skips anything marked as concealed or transient, plus any apps you choose to ignore.</p>
+      </article>
+      <article class="card">
+        <div class="ic o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Preview and history</h3>
+        <p>Press <kbd class="k">⌘Y</kbd> to see the full text, image or file list, with where it came from and when.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="privacy" style="padding-top:84px">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Private by design</p>
+      <h2>Nothing leaves your Mac.</h2>
+      <p>Tuck has no network code and no telemetry. Your clipboard history is stored in an encrypted file on your Mac, with the key in your login Keychain.</p>
+    </div>
+    <ul class="facts">
+      <li><b>No network code</b><span>Tuck never connects to the internet.</span></li>
+      <li><b>No telemetry</b><span>No analytics, no crash reports, no accounts.</span></li>
+      <li><b>Open source</b><span>Read every line on GitHub. MIT licence.</span></li>
+    </ul>
+    <p style="margin-top:28px"><a href="https://github.com/aswin099/tuck">Read the source on GitHub</a></p>
+  </div>
+</section>
+
+<section id="keys">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Shortcuts</p>
+      <h2>Everything has a key.</h2>
+    </div>
+    <div class="keys">
+      <div><kbd class="k">⇧⌘V</kbd><span>Open Tuck</span></div>
+      <div><kbd class="k">↩</kbd><span>Paste the selected item</span></div>
+      <div><kbd class="k">⌘1–9</kbd><span>Paste the 1st to 9th item</span></div>
+      <div><kbd class="k">⌘P</kbd><span>Pin or unpin</span></div>
+      <div><kbd class="k">⌘Y</kbd><span>Preview</span></div>
+      <div><kbd class="k">⌘⌫</kbd><span>Delete the item</span></div>
+      <div><kbd class="k">⇥</kbd><span>Add to the paste queue</span></div>
+      <div><kbd class="k">⌃⌘V</kbd><span>Paste the queue, oldest first</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Questions</p>
+      <h2>Good to know.</h2>
+    </div>
+    <details>
+      <summary>Is Tuck free?</summary>
+      <p>Yes. Tuck is free and open source under the MIT licence, with no ads and no account.</p>
+    </details>
+    <details>
+      <summary>Why does macOS warn me when I open it?</summary>
+      <p>The preview isn't signed by Apple yet. The download page explains the one-time "Open Anyway" step in System Settings, or you can build it yourself from the source.</p>
+    </details>
+    <details>
+      <summary>Which Macs does it need?</summary>
+      <p>macOS 14 Sonoma or later. Windows preview builds are also attached to the releases page.</p>
+    </details>
+    <details>
+      <summary>Does Tuck send my clipboard anywhere?</summary>
+      <p>No. Tuck has no network code, so your clipboard history can't leave your Mac.</p>
+    </details>
+    <details>
+      <summary>It's a preview. What should I expect?</summary>
+      <p>The core works and has unit tests, but it hasn't had much real-world use yet, so expect rough edges. Please <a href="https://github.com/aswin099/tuck/issues">report problems</a> on GitHub, or email <a href="mailto:arcova.apps@gmail.com">arcova.apps@gmail.com</a>.</p>
+    </details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Arcova · MIT licensed</span>
+    <ul>
+      <li><a href="../">All Arcova apps</a></li>
+      <li><a href="https://github.com/aswin099/tuck">Source</a></li>
+      <li><a href="mailto:arcova.apps@gmail.com">arcova.apps@gmail.com</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

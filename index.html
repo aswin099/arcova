@@ -3,42 +3,115 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Arcova · Inkly</title>
-<meta name="description" content="Arcova makes Inkly, a private PDF editor and file converter for Android and iPhone.">
+<title>Arcova · Small, private tools</title>
+<meta name="description" content="Arcova makes small, well-made apps that keep your data on your device. Inkly for PDFs on your phone, Tuck for your Mac's clipboard.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Arcova: small, private tools">
+<meta property="og:description" content="Apps that work on your device, with no accounts, ads or tracking.">
+<meta property="og:url" content="https://aswin099.github.io/arcova/">
+<meta property="og:image" content="https://aswin099.github.io/arcova/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F3D30">
 <link rel="icon" href="inkly.svg" type="image/svg+xml">
-<style>
-:root{--bg:#F3F7F5;--surface:#FFFFFF;--ink:#0B1F1A;--muted:#4E6660;--line:#E1E9E5;--accent:#0B6B4C;--hero:#0F3D30;--mint:#7CF2C1}
-@media (prefers-color-scheme:dark){:root{--bg:#08130F;--surface:#11211B;--ink:#EAF4F0;--muted:#9DB3AB;--line:#1E332B;--accent:#7CF2C1;--hero:#14483A}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:880px;margin:0 auto;padding:40px 16px 80px}
-.brand{font-weight:800;font-size:22px;letter-spacing:-0.03em;margin-bottom:56px}
-.app{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
-.app img{width:112px;height:112px;border-radius:26px}
-h1{font-size:clamp(36px,7vw,56px);line-height:1.05;letter-spacing:-0.035em;margin:0}
-.lead{font-size:20px;color:var(--muted);margin:8px 0 0;max-width:34ch}
-.card{margin-top:40px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:20px 22px}
-.card h2{margin:0 0 6px;font-size:18px}
-.card p{margin:0;color:var(--muted)}
-a{color:var(--accent)}
-footer{margin-top:56px;color:var(--muted);font-size:15px;display:flex;gap:20px;flex-wrap:wrap}
-</style>
+<link rel="preload" href="fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
+
+<header class="hero hub-hero">
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="./" aria-label="Arcova home">
+        <svg viewBox="0 0 48 48" fill="none" stroke-width="4" aria-hidden="true"><path d="M10 30A14 14 0 0 1 38 30M17.5 30A6.5 6.5 0 0 1 30.5 30" stroke="currentColor"/><path d="M8 37q4-3 8 0t8 0 8 0 8 0" stroke="#7FD1C7" stroke-width="3" stroke-linecap="round"/></svg>
+        Arcova
+      </a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#apps">Apps</a></li>
+          <li><a href="#principles">Principles</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div style="padding:56px 0 24px;max-width:780px">
+      <p class="eyebrow">Arcova</p>
+      <h1>Small tools, made well. <em>Yours alone.</em></h1>
+      <p class="lead">We make apps that do one job properly and keep your data on your own device. No accounts, no ads, no tracking.</p>
+    </div>
+  </div>
+</header>
+
 <main>
-<div class="brand">Arcova</div>
-<div class="app">
-<img src="inkly.svg" alt="Inkly app icon">
-<div>
-<h1>Inkly</h1>
-<p class="lead">Edit, organize and convert PDFs on your phone. Private by design.</p>
-</div>
-</div>
-<div class="card">
-<h2>Support</h2>
-<p>Questions or problems? Email <a href="mailto:arcova.apps@gmail.com">arcova.apps@gmail.com</a>. We usually reply within two working days.</p>
-</div>
-<footer><a href="privacy/">Privacy policy</a><span>© 2026 Arcova</span></footer>
+<section id="apps">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Our apps</p>
+      <h2>Pick a tool.</h2>
+    </div>
+    <div class="apps">
+
+      <article class="app-card">
+        <img src="img/icon.png" width="72" height="72" alt="">
+        <div class="badges"><span class="badge">Android</span><span class="badge soon">Coming soon to Google Play</span></div>
+        <h3><a href="inkly/">Inkly</a></h3>
+        <p>PDF editor and converter. Organize, merge, sign, compress and convert PDFs right on your phone.</p>
+        <span class="more" aria-hidden="true">Learn more →</span>
+      </article>
+
+      <article class="app-card">
+        <img src="img/tuck-icon.png" width="72" height="72" alt="">
+        <div class="badges"><span class="badge">Mac</span><span class="badge live">Free · open source</span></div>
+        <h3><a href="tuck/">Tuck</a></h3>
+        <p>A clipboard manager for your Mac. Copy as usual, then search and paste anything you copied with a keystroke.</p>
+        <span class="more" aria-hidden="true">Learn more →</span>
+      </article>
+
+      <article class="app-card next">
+        <div class="plus" aria-hidden="true">+</div>
+        <div class="badges"><span class="badge">In the works</span></div>
+        <h3>More on the way</h3>
+        <p>Next ideas are small, private and useful. Got a tool you wish existed? <a class="mail" href="mailto:arcova.apps@gmail.com?subject=App%20idea">Tell us</a>.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="band" id="principles">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">How we build</p>
+      <h2>Three rules for every app.</h2>
+    </div>
+    <ul class="facts">
+      <li><b>Private by default</b><span>Your files and data stay on your device. We don't run servers that hold your stuff.</span></li>
+      <li><b>Small and well made</b><span>Each app does one job and does it properly, with care for how it looks and feels.</span></li>
+      <li><b>No ads, no tracking</b><span>No advertising, analytics or accounts, in any app we make.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Contact</p>
+      <h2>Say hello.</h2>
+      <p>Questions, problems or ideas for a new app? Email <a href="mailto:arcova.apps@gmail.com">arcova.apps@gmail.com</a>. We usually reply within two working days.</p>
+    </div>
+  </div>
+</section>
 </main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Arcova</span>
+    <ul>
+      <li><a href="inkly/">Inkly</a></li>
+      <li><a href="tuck/">Tuck</a></li>
+      <li><a href="privacy/">Inkly privacy policy</a></li>
+    </ul>
+  </div>
+</footer>
+
 </body>
 </html>

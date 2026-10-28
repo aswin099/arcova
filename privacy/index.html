@@ -5,64 +5,80 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Inkly Privacy Policy · Arcova</title>
 <meta name="description" content="How the Inkly app handles your files and data. Short version: everything stays on your phone.">
+<meta name="theme-color" content="#0F3D30">
 <link rel="icon" href="../inkly.svg" type="image/svg+xml">
-<style>
-:root{--bg:#F3F7F5;--surface:#FFFFFF;--ink:#0B1F1A;--muted:#4E6660;--line:#E1E9E5;--accent:#0B6B4C;--hero:#0F3D30;--mint:#7CF2C1}
-@media (prefers-color-scheme:dark){:root{--bg:#08130F;--surface:#11211B;--ink:#EAF4F0;--muted:#9DB3AB;--line:#1E332B;--accent:#7CF2C1;--hero:#14483A}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:720px;margin:0 auto;padding:40px 16px 80px}
-header{display:flex;align-items:center;gap:12px;margin-bottom:32px}
-header img{width:44px;height:44px;border-radius:10px}
-header span{font-weight:800;font-size:22px;letter-spacing:-0.02em}
-h1{font-size:clamp(32px,6vw,44px);line-height:1.1;letter-spacing:-0.03em;margin:0 0 8px}
-h2{font-size:20px;margin:36px 0 8px;letter-spacing:-0.01em}
-p,li{color:var(--ink)}
-.meta{color:var(--muted);margin:0 0 28px}
-.summary{background:var(--hero);color:#fff;border-radius:20px;padding:20px 22px}
-.summary p{color:#fff;margin:0}
-.summary strong{color:var(--mint)}
-a{color:var(--accent)}
-ul{padding-left:22px}
-footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
-</style>
+<link rel="preload" href="../fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../site.css">
 </head>
 <body>
-<main>
-<header><img src="../inkly.svg" alt=""><span>Inkly</span></header>
-<h1>Privacy Policy</h1>
-<p class="meta">Effective 1 November 2026 · Applies to the Inkly app on Android and iOS</p>
+<div class="wrap">
+  <div class="top">
+    <a class="brand" href="../" aria-label="Arcova home">
+      <svg viewBox="0 0 48 48" fill="none" stroke-width="4" aria-hidden="true"><path d="M10 30A14 14 0 0 1 38 30M17.5 30A6.5 6.5 0 0 1 30.5 30" stroke="currentColor"/><path d="M8 37q4-3 8 0t8 0 8 0 8 0" stroke="#1E8C86" stroke-width="3" stroke-linecap="round"/></svg>
+      Arcova
+    </a>
+    <nav aria-label="Main"><ul><li><a href="../inkly/">Inkly</a></li></ul></nav>
+  </div>
+</div>
 
-<div class="summary"><p><strong>Short version:</strong> Inkly works entirely on your phone. We don't collect, store, sell or share any of your files or personal data. The app has no account, no ads, no analytics and no tracking, and on Android it doesn't even request internet access.</p></div>
+<main class="doc">
+  <p class="eyebrow">Inkly for Android and iPhone</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective 1 November 2026</p>
 
-<h2>Who we are</h2>
-<p>Inkly is made by Arcova ("we", "us"). If you have a question about this policy, email <a href="mailto:arcova.apps@gmail.com">arcova.apps@gmail.com</a>.</p>
+  <div class="glance"><p><strong>Short version:</strong> Inkly works entirely on your phone. We don't collect, store, sell or share your files or personal data. The app has no account, no ads, no analytics and no tracking, and on Android it doesn't even ask for internet access.</p></div>
 
-<h2>Your files</h2>
-<p>When you open, create or convert a file in Inkly, it is processed on your device. Files you open or create are kept in Inkly's private storage on your phone until you delete them or uninstall the app. Files leave your phone only when you choose <em>Share</em> or <em>Save to…</em>, and then they go only where you send them.</p>
+  <ul class="toc" aria-label="On this page">
+    <li><a href="#files">Your files</a></li>
+    <li><a href="#signatures">Signatures</a></li>
+    <li><a href="#photos">Photos and camera</a></li>
+    <li><a href="#data">Data we collect</a></li>
+    <li><a href="#third">Third parties</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 
-<h2>Photos and camera</h2>
-<p>Inkly uses the system photo picker and camera only when you choose to add photos, for example in Images to PDF. It sees only the photos you pick. Nothing is uploaded.</p>
+  <h2>Who we are</h2>
+  <p>Inkly is made by Arcova ("we", "us"). If you have a question about this policy, email <a href="mailto:arcova.apps@gmail.com">arcova.apps@gmail.com</a>.</p>
 
-<h2>Passwords</h2>
-<p>If you remove a password from a PDF, you type it in to unlock the file on your device. Inkly never stores or sends it.</p>
+  <h2 id="files">Your files</h2>
+  <p>When you open, create or convert a file in Inkly, it is processed on your device. Files you open or create are kept in Inkly's private storage on your phone until you delete them or uninstall the app. They are not included in cloud backups or phone-to-phone transfers.</p>
+  <p>If you open or share a PDF to Inkly from another app, Inkly makes a copy on your phone so it can work with it. That copy stays on your phone too.</p>
+  <p>Files leave your phone only when you choose <em>Share</em> or <em>Save to…</em>, and then they go only where you send them.</p>
 
-<h2>Data we collect</h2>
-<p>None. Inkly does not collect personal information, device identifiers, location, contacts, usage statistics or crash reports. Your theme and appearance settings are stored only on your phone.</p>
+  <h2 id="signatures">Saved signatures</h2>
+  <p>A signature or initials you create, by drawing, typing or photographing them, are saved as images in Inkly's private storage on your phone. They are not uploaded and not included in backups. You can rename or delete them any time in Settings, and uninstalling Inkly removes them.</p>
 
-<h2>Third parties</h2>
-<p>Inkly contains no advertising, analytics or tracking software. It uses open-source libraries (listed in the app under Settings → Open-source licences) that run on your device and do not send data anywhere. Google Play and the App Store may collect information under their own privacy policies when you download the app.</p>
+  <h2 id="photos">Photos and camera</h2>
+  <p>Inkly uses the system photo picker and camera only when you choose to add photos, for example in Images to PDF or when photographing a signature. It sees only the photos you pick. Nothing is uploaded.</p>
 
-<h2>Children</h2>
-<p>Inkly is not directed at children under 13 and does not knowingly collect information from anyone, including children.</p>
+  <h2>Passwords</h2>
+  <p>If you remove a password from a PDF, you type it in to unlock the file on your device. Inkly never stores or sends it.</p>
 
-<h2>Your choices</h2>
-<p>You can delete any file from the Files tab, or remove everything by uninstalling the app. Because we hold no data about you, there is nothing for us to access, correct or delete on our side.</p>
+  <h2 id="data">Data we collect</h2>
+  <p>None. Inkly does not collect personal information, device identifiers, location, contacts, usage statistics or crash reports. Your theme and appearance settings are stored only on your phone.</p>
 
-<h2>Changes</h2>
-<p>If we change this policy, we will update this page and the effective date above. If a future version of Inkly needs to handle data differently, we will say so here before that version is released.</p>
+  <h2 id="third">Third parties</h2>
+  <p>Inkly contains no advertising, analytics or tracking software. It uses open-source libraries (listed in the app under Settings → Open-source licences) that run on your device and do not send data anywhere. Google Play and the App Store may collect information under their own privacy policies when you download the app.</p>
+  <p>This website uses no cookies, no analytics and no third-party fonts or scripts.</p>
 
-<footer>Inkly is a product of Arcova. Contact: <a href="mailto:arcova.apps@gmail.com">arcova.apps@gmail.com</a></footer>
+  <h2>Children</h2>
+  <p>Inkly is not directed at children under 13 and does not knowingly collect information from anyone, including children.</p>
+
+  <h2>Your choices</h2>
+  <p>You can delete any file from the Files tab, delete saved signatures in Settings, or remove everything by uninstalling the app. Because we hold no data about you, there is nothing for us to access, correct or delete on our side.</p>
+
+  <h2>Changes</h2>
+  <p>If we change this policy, we will update this page and the effective date above. If a future version of Inkly needs to handle data differently, we will say so here before that version is released.</p>
+
+  <h2 id="contact">Contact</h2>
+  <p>Questions about privacy? Email <a href="mailto:arcova.apps@gmail.com">arcova.apps@gmail.com</a>.</p>
 </main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Arcova</span>
+    <ul><li><a href="../inkly/">Back to Inkly</a></li></ul>
+  </div>
+</footer>
 </body>
 </html>
