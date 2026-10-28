@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Arcova">
+  <rect width="48" height="48" rx="11" fill="#0E5E6F"/>
+  <path d="M10 30A14 14 0 0 1 38 30" fill="none" stroke="#F4E9D8" stroke-width="4"/>
+  <path d="M17.5 30A6.5 6.5 0 0 1 30.5 30" fill="none" stroke="#F4E9D8" stroke-width="4"/>
+  <path d="M8 37q4-3 8 0t8 0 8 0 8 0" fill="none" stroke="#7FD1C7" stroke-width="3" stroke-linecap="round"/>
+</svg>
