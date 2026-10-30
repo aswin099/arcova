@@ -160,6 +160,19 @@ footer a,.band p a{display:inline-block;padding:12px 2px}
 .t-tuck .band a,.t-tuck .hero a.plain{color:var(--mint)}
 .t-tuck .tuck-icon{width:88px;height:88px;border-radius:22px;margin-bottom:22px;box-shadow:0 10px 30px rgba(0,0,0,.3)}
 
+/* Hoverbox: ocean blue and cardboard */
+.t-hoverbox{--bg:#F4F8FC;--surface:#FFFFFF;--ink:#0F2338;--muted:#3E5B77;--line:#DCE6F0;--accent:#143A5C;--mint:#F4B66A;--forest:#143A5C;--forest-2:#1E4E78;--on-forest-muted:#CFE2F5}
+@media (prefers-color-scheme:dark){.t-hoverbox{--bg:#0D1F31;--surface:#142B43;--ink:#EEF5FB;--muted:#A9C3DA;--line:#23405C;--accent:#CFEAFF;--forest:#143A5C;--forest-2:#1E4E78}}
+.t-hoverbox .pill.main{color:#0F2338}
+.t-hoverbox .card .ic,.t-hoverbox .card .ic.b,.t-hoverbox .card .ic.p{background:#E1ECF7;color:#143A5C}
+.t-hoverbox .card .ic.o,.t-hoverbox .card .ic.y{background:#FDF0DF;color:#7A4A12}
+@media (prefers-color-scheme:dark){.t-hoverbox .card .ic,.t-hoverbox .card .ic.b,.t-hoverbox .card .ic.p{background:#1D3A57;color:#CFEAFF}.t-hoverbox .card .ic.o,.t-hoverbox .card .ic.y{background:#3A2A14;color:#F4B66A}}
+.t-hoverbox .badge.live{background:#E1ECF7;color:#143A5C}
+@media (prefers-color-scheme:dark){.t-hoverbox .badge.live{background:#1D3A57;color:#CFEAFF}}
+.t-hoverbox .band a,.t-hoverbox .hero a.plain{color:var(--mint)}
+.t-hoverbox .hoverbox-icon{width:88px;height:88px;border-radius:22px;margin-bottom:22px;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.shelf-shot{width:min(450px,88vw);height:auto;filter:drop-shadow(0 30px 50px rgba(0,0,0,.45))}
+
 /* Tuck's popup, drawn in HTML (an illustration, not a screenshot) */
 .popup{width:min(360px,86vw);background:rgba(255,255,255,.96);color:#14153A;border-radius:18px;box-shadow:0 30px 60px rgba(0,0,0,.4);padding:10px;font-size:14px;line-height:1.35;border:1px solid rgba(20,21,58,.12)}
 .popup .search{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;background:#EEF;color:#3B3D78;margin-bottom:6px}

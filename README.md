@@ -7,6 +7,7 @@ Plain HTML and CSS, no build step, no scripts, no third-party requests. Publishe
 | `index.html` | Arcova home: one card per app |
 | `inkly/` | Inkly's page |
 | `tuck/` | Tuck's page |
+| `hoverbox/` | Hoverbox's page |
 | `privacy/` | Inkly's privacy policy (the Google Play link, so keep this path) |
 | `site.css` | All styles; app colours are scoped classes like `.t-tuck` |
 | `fonts/`, `img/` | Self-hosted fonts (OFL) and images |
