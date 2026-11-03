@@ -7,7 +7,7 @@
 <meta name="description" content="Hoverbox gives your drags a place to land. Shake while dragging and a shelf appears; drop things on it, then drag them out wherever you need. Free, open source, no permissions.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hoverbox: a shelf for everything you drag">
-<meta property="og:description" content="A free, open-source drag-and-drop shelf for Mac. No permissions, no network.">
+<meta property="og:description" content="A free, open-source drag-and-drop shelf for Mac. No permissions, no tracking.">
 <meta property="og:url" content="https://aswin099.github.io/arcova/hoverbox/">
 <meta name="theme-color" content="#143A5C">
 <link rel="icon" href="../img/hoverbox-icon.png" type="image/png">
@@ -44,7 +44,7 @@
           <a class="pill ghost" href="https://github.com/aswin099/hoverbox">View the source</a>
         </div>
         <div class="chips"><span class="chip"><i class="plat apple" aria-hidden="true"></i>macOS 14 or later</span><span class="chip"><i class="plat windows" aria-hidden="true"></i>Windows on the way</span></div>
-        <p class="note">Early preview v0.4. Free and open source under the MIT licence.</p>
+        <p class="note">Early preview v0.6. Free and open source under the MIT licence.</p>
       </div>
       <div class="stage">
         <img class="shelf-shot" src="../img/hoverbox-shelf.png" width="450" height="370" alt="A Hoverbox shelf showing four files in a grid, with their names and sizes">
@@ -75,7 +75,7 @@
       <article class="card">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 3 5 14h6l-1 7 8-11h-6z"/></svg></div>
         <h3>Actions on the spot</h3>
-        <p>Share, AirDrop, ZIP and unzip, resize, convert and compress images, and copy the text out of images and PDFs. Your originals are never changed.</p>
+        <p>Share, AirDrop, upload to your own storage and copy the link, ZIP and unzip, resize, convert and compress images, and copy the text out of images and PDFs. Your originals are never changed.</p>
       </article>
       <article class="card">
         <div class="ic o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4z"/><path d="M17 14v6M14 17h6"/></svg></div>
@@ -89,8 +89,8 @@
       </article>
       <article class="card">
         <div class="ic o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M5 9h14M12 9v12M8 21l4-6 4 6"/></svg></div>
-        <h3>Works without dragging</h3>
-        <p>Right-click in Finder and choose Add to Hoverbox, use the Share menu, or copy and paste. VoiceOver hears every shelf open and every action finish.</p>
+        <h3>Works without dragging, and automates</h3>
+        <p>Add to Hoverbox in Finder, the Share menu, copy and paste, the Shortcuts app, or the <code>hoverbox</code> command. Chain your own actions and scripts. VoiceOver hears every shelf open and every action finish.</p>
       </article>
     </div>
   </div>
@@ -100,11 +100,12 @@
   <div class="wrap">
     <div class="head">
       <p class="eyebrow">Private by design</p>
-      <h2>No permissions. No network.</h2>
-      <p>Hoverbox spots your shake by watching the mouse, which macOS allows without any permission. It never connects to the internet; sharing and AirDrop go through macOS itself.</p>
+      <h2>No permissions. No tracking.</h2>
+      <p>Hoverbox spots your shake by watching the mouse, which macOS allows without any permission. It only goes online when you upload something, and then straight to storage you set up yourself; sharing and AirDrop go through macOS itself.</p>
     </div>
     <ul class="facts">
       <li><b>No permissions</b><span>No Accessibility, Input Monitoring or Screen Recording.</span></li>
+      <li><b>Your storage, your keys</b><span>Uploads go to your own S3, R2, B2 or WebDAV. Keys stay in your Keychain. No Hoverbox server.</span></li>
       <li><b>Your files stay put</b><span>Shelves hold references, or copies if you prefer. Actions make new files.</span></li>
       <li><b>Open source</b><span>Read every line on GitHub. MIT licence.</span></li>
     </ul>
@@ -140,6 +141,10 @@
     <details>
       <summary>Is Hoverbox free?</summary>
       <p>Yes. Everything is free: no trial, no waiting, no paid tier, no ads and no account. It's open source under the MIT licence.</p>
+    </details>
+    <details>
+      <summary>Does it send my files anywhere?</summary>
+      <p>Only when you choose Upload, and only to storage you set up in Settings: your own Amazon S3, Cloudflare R2, Backblaze B2, MinIO or WebDAV. There's no Hoverbox server, no analytics and no tracking.</p>
     </details>
     <details>
       <summary>Will it move or change my files?</summary>
